@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tertiary Care Hospital</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a class="logo" href="#home">
+          <span>H</span>Care Central
+        </a>
+        <nav>
+          <button id="mobile-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+          <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#services">Services</a>
+            <a href="#appointments">Appointments</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">24/7 Tertiary Care Support</p>
+            <h1>Compassionate care for every patient, every team member, every moment.</h1>
+            <p>
+              HCare Central is a fully integrated tertiary hospital designed for doctors, nurses, staff, and patients. We provide emergency care,
+              advanced diagnostics, surgery support, and expert patient coordination in one space.
+            </p>
+            <div class="hero-actions">
+              <a href="#appointments" class="cta-button">Book an Appointment</a>
+              <a href="#services" class="secondary-button">Explore Services</a>
+            </div>
+            <div class="metrics">
+              <div class="metric-card">
+                <h3>220+</h3>
+                <p>Specialist doctors on staff</p>
+              </div>
+              <div class="metric-card">
+                <h3>650+</h3>
+                <p>Dedicated nurses and caregivers</p>
+              </div>
+              <div class="metric-card">
+                <h3>24/7</h3>
+                <p>Emergency and patient support</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-panel">
+              <h2>One hospital, many healing spaces.</h2>
+              <p>
+                Move seamlessly between consultation rooms, surgical suites, patient care units, and staff coordination centers with a supportive
+                care ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-title">
+          <div>
+            <h2>Spaces for every care team</h2>
+            <p>
+              Our hospital features dedicated environments for doctors, nurses, clinical staff, and patients to foster collaboration, wellbeing, and faster recovery.
+            </p>
+          </div>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Doctor Collaboration Hub</h3>
+            <p>
+              Conference rooms, telemedicine units, and specialist lounges keep physicians connected and focused on patient-first decisions.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Nurse Care Center</h3>
+            <p>
+              Smooth shift handovers, centralized medication tracking, and quiet rest zones support nurses through every critical moment.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Patient Healing Suites</h3>
+            <p>
+              Private recovery rooms with tailored technology, family-friendly waiting spaces, and compassionate support help patients feel secure.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Team Support & Administration</h3>
+            <p>
+              A dedicated operations wing for hospital staff, administrative services, and clinical logistics coordination.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="doctors" class="section container">
+        <div class="section-title">
+          <div>
+            <h2>Featured Physicians</h2>
+            <p>Browse specialists across departments and filter by experience, specialty, or care focus.</p>
+          </div>
+          <div class="filter-row">
+            <label for="doctor-specialty">Filter by specialty</label>
+            <select id="doctor-specialty" class="doctor-filter">
+              <option value="all">All specialties</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="neurology">Neurology</option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pediatrics">Pediatrics</option>
+            </select>
+          </div>
+        </div>
+        <div class="profile-grid">
+          <article class="profile-card doctor-card" data-specialty="cardiology">
+            <h3>Dr. Maya Sinclair</h3>
+            <span>Cardiologist</span>
+            <p>Specializes in minimally invasive heart procedures, cardiac rehab, and emergency cardiology coordination.</p>
+            <ul>
+              <li>15 years experience</li>
+              <li>ECG & catheter lab supervision</li>
+              <li>Patient education leader</li>
+            </ul>
+          </article>
+          <article class="profile-card doctor-card" data-specialty="neurology">
+            <h3>Dr. Amir Patel</h3>
+            <span>Neurologist</span>
+            <p>Expert in stroke care, neurocritical monitoring, and complex neurology cases with integrated rehab planning.</p>
+            <ul>
+              <li>12 years experience</li>
+              <li>ICU neurology care</li>
+              <li>Tele-neurology consults</li>
+            </ul>
+          </article>
+          <article class="profile-card doctor-card" data-specialty="orthopedics">
+            <h3>Dr. Olivia Huang</h3>
+            <span>Orthopedic Surgeon</span>
+            <p>Focused on joint preservation, trauma surgery, and orthopedic rehabilitation pathways for surgical patients.</p>
+            <ul>
+              <li>18 years experience</li>
+              <li>Joint replacement specialist</li>
+              <li>Sports medicine support</li>
+            </ul>
+          </article>
+          <article class="profile-card doctor-card" data-specialty="pediatrics">
+            <h3>Dr. Samuel Oladele</h3>
+            <span>Pediatrician</span>
+            <p>Provides compassionate pediatric primary care, inpatient support, and family-centered child wellness plans.</p>
+            <ul>
+              <li>10 years experience</li>
+              <li>Neonatal unit collaborator</li>
+              <li>Child development guidance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <div class="section-title">
+          <div>
+            <h2>Core Hospital Services</h2>
+            <p>Our tertiary care hospital provides advanced medical services with patient safety and staff efficiency in mind.</p>
+          </div>
+        </div>
+        <div class="facilities-grid">
+          <div class="facility-card">
+            <div class="label">Emergency</div>
+            <h3>Critical Response Unit</h3>
+            <p>Fast emergency triage, trauma surgery suites, and 24/7 resuscitation support for urgent care.</p>
+          </div>
+          <div class="facility-card">
+            <div class="label">Diagnostics</div>
+            <h3>Advanced Imaging</h3>
+            <p>CT, MRI, ultrasound, and lab diagnostics are integrated for quick clinical decision making.</p>
+          </div>
+          <div class="facility-card">
+            <div class="label">Surgery</div>
+            <h3>Operating & Recovery</h3>
+            <p>Modular operating theaters, surgical anesthesia support, and postoperative recovery coordination.</p>
+          </div>
+          <div class="facility-card">
+            <div class="label">Support</div>
+            <h3>Patient Experience</h3>
+            <p>Patient services, nutrition planning, social work, and discharge planning keep care continuous.</p>
+          </div>
+          <div class="facility-card">
+            <div class="label">Pharmacy</div>
+            <h3>Medication Management</h3>
+            <p>Full inpatient and outpatient pharmacy with clinical review and medication counseling support.</p>
+          </div>
+          <div class="facility-card">
+            <div class="label">Wellness</div>
+            <h3>Rehabilitation Care</h3>
+            <p>Physical therapy, occupational therapy, and rehabilitative services are available for recovery support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="appointments" class="section container">
+        <div class="section-title">
+          <div>
+            <h2>Appointment Booking</h2>
+            <p>Schedule a consultation, book an exam, or request patient support services in a few simple steps.</p>
+          </div>
+        </div>
+        <div class="hero-form">
+          <form id="appointment-form" class="appointment-form">
+            <h3>Request your visit</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="service">Requested Service</label>
+                <select id="service" name="service" required>
+                  <option value="">Select service</option>
+                  <option value="specialist consultation">Specialist consultation</option>
+                  <option value="follow-up visit">Follow-up visit</option>
+                  <option value="diagnostic test">Diagnostic test</option>
+                  <option value="emergency follow-up">Emergency follow-up</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input id="date" name="date" type="date" />
+              </div>
+              <div class="form-group" style="grid-column: span 2;">
+                <label for="notes">Notes / Priority</label>
+                <textarea id="notes" name="notes" placeholder="Tell us a little more about your request..."></textarea>
+              </div>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="cta-button">Send Request</button>
+              <p id="form-alert" class="form-alert">We will contact you within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-title">
+          <div>
+            <h2>Contact & Location</h2>
+            <p>Reach out to our patient support center or visit our main campus to explore care options.</p>
+          </div>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Main Campus</h3>
+            <p>123 Health Way, Care City, State 45678</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@hcarecentral.com</p>
+          </div>
+          <div class="info-card">
+            <h3>Staff & Department Hours</h3>
+            <p>Administration: 8:00 AM – 6:00 PM</p>
+            <p>Emergency: Open 24/7</p>
+            <p>Outpatient Clinics: 7:00 AM – 8:00 PM</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>HCare Central</h3>
+          <p>Supporting patients, staff, and medical teams with secure tertiary care facilities and modern workflows.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#doctors">Our doctors</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get help</h3>
+          <ul>
+            <li><a href="mailto:contact@hcarecentral.com">contact@hcarecentral.com</a></li>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 HCare Central. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
